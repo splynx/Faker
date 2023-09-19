@@ -410,7 +410,7 @@ class Base
      */
     public static function lexify($string = '????')
     {
-        return self::replaceWildcard($string, '?', static::class . 'randomLetter');
+        return self::replaceWildcard($string, '?', static::class . '::randomLetter');
     }
 
     /**
